@@ -10,7 +10,6 @@ public class ApresJava8 {
 		List<String> lines = Arrays.asList("spring", "node", "mkyong");
 		List<String> result = lines.stream().filter(line -> !"node".equals(line)).collect(Collectors.toList());
 		
-		
 		result.forEach(System.out::println);
 	}
 
