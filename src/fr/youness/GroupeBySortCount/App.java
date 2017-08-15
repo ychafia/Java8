@@ -21,7 +21,8 @@ public class App {
 		System.out.println("* * * * * * * * * *  * *");
 		System.out.println("Trier : ");
 		
-		Map<String, Long> resultFinal = new LinkedHashMap();
+		Map<String, Long> resultFinal = new LinkedHashMap<String, Long>();
+		
 		result.entrySet().stream().sorted(Map.Entry.<String, Long>comparingByValue()
                 .reversed()).forEachOrdered(e -> resultFinal.put(e.getKey(), e.getValue()));
 		
